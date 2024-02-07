@@ -5,6 +5,6 @@
 React
 Tailwind CSS
 ## How to Run:
-Clone the repository.
-Install dependencies with npm install.
-Start the development server with npm start.
+- Clone the repository.
+- Install dependencies with npm install.
+- Start the development server with npm start.
