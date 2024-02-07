@@ -28,11 +28,13 @@ const Home = () => {
     <div className="w-full h-[300px] bg-gradient-to-b from-transparent bg-[#6841da] px-5">
       <div className="h-[80px]"></div>
       <h1 className="w-fit text-white mx-auto lg:text-5xl text-3xl font-bold mb-4 drop-shadow-md">
+        {/* title */}
         TO-DO Application
       </h1>
       <div className="max-w-[600px] bg-black-100 shadow-xl p-5 rounded-lg mx-auto bg">
         <form onSubmit={handleSubmit}>
           <div className="flex rounded-[5px] overflow-hidden border border-black/30" title="Add item">
+            {/* Input form */}
             <input
               type="text"
               value={inputValue}
@@ -45,6 +47,7 @@ const Home = () => {
             </button>
           </div>
         </form>
+          {/* List of Task pass Task component */}
         <div className="border-t my-5 border-white/10 min-h-[300px]">
           {items?.length > 0 &&
             items.map((item) => (

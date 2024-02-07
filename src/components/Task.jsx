@@ -6,6 +6,7 @@ import Cross from "../icons/Cross";
 
 
 const Task = ({ item }) => {
+  // from provider
   const {
     updateItemText,
     toggleItemDone,
@@ -45,6 +46,7 @@ const Task = ({ item }) => {
             item.isDone ? "bg-success" : "bg-secondary"
           } rounded-lg`}
         ></div>
+        {/* Editing Update task */}
         {isEditing ? (
           <input
             type="text"
@@ -64,6 +66,7 @@ const Task = ({ item }) => {
           </p>
         )}
       </div>
+      {/* saved or cancel edit task */}
       <div className="w-[100px] flex gap-3 justify-end text-white/50">
         {isEditing ? (
           <>
@@ -84,6 +87,7 @@ const Task = ({ item }) => {
           </>
         ) : (
           <>
+          {/* edit option */}
             <button
               className="hover:text-white "
               title="Edit"
@@ -98,6 +102,7 @@ const Task = ({ item }) => {
             >
               {item.isDone ? <Cross /> : <Check />}
             </button>
+            {/* delete option */}
             <button
               className="hover:text-white"
               title="Delete Task"

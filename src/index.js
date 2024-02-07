@@ -8,6 +8,7 @@ import { TodoProvider } from './provider/TodoProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* wrap with context provider */}
     <TodoProvider>
 
     <App />
